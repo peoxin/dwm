@@ -65,9 +65,9 @@ static const char *dmenucmd[] = { "dmenu_run", "-m", dmenumon, "-fn", dmenufont,
 static const char *termcmd[]  = { "alacritty", NULL };
 
 /* my commands */
-static const char *voltogglecmd[]  = { "~/.dwm/voltoggle.sh", NULL };
-static const char *voldowncmd[]  = { "~/.dwm/voldown.sh", NULL };
-static const char *volupcmd[]  = { "~/.dwm/volup.sh", NULL };
+static const char *voltogglecmd[]  = { "/home/peoxin/.dwm/voltoggle.sh", NULL };
+static const char *voldowncmd[]  = { "/home/peoxin/.dwm/voldown.sh", NULL };
+static const char *volupcmd[]  = { "/home/peoxin/.dwm/volup.sh", NULL };
 
 static Key keys[] = {
 	/* modifier                     key        function        argument */

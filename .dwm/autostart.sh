@@ -8,3 +8,6 @@ feh --bg-scale  ~/Pictures/wallpaper
 
 # Run slstatus
 exec slstatus &
+
+# Run clash
+exec cfw &
