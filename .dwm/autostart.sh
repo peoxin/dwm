@@ -11,3 +11,6 @@ exec slstatus &
 
 # Run clash
 exec cfw &
+
+# Run fcitx5
+exec fcitx5 &
