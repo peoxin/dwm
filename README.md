@@ -45,6 +45,7 @@ sudo pacman -S wqy-microhei ttf-nerd-fonts-symbols
 | 补丁      | 下载链接                                                     |
 | --------- | ------------------------------------------------------------ |
 | autostart | https://dwm.suckless.org/patches/autostart/dwm-autostart-20210120-cb3f58a.diff |
+| fullgaps | http://dwm.suckless.org/patches/fullgaps/dwm-fullgaps-toggle-20200830.diff |
 
 ### 正式配置
 
