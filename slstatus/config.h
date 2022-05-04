@@ -71,7 +71,7 @@ static const struct arg args[] = {
 	{ ram_used, "%s |",          NULL    },
 	{ disk_free, "  %s |",       "/"     },
 	{ ipv4,     "  %s |",        "ens33" },
-	{ run_command, "  %s |",        "amixer get Master | awk -F \"[][]\" '/Left:/ {print $2}'" },
-	{ run_command, "  %s |",        "amixer get Capture | awk -F \"[][]\" '/Left:/ {print $2}'" },
+	{ run_command, "  %s |",        "amixer get Master | awk -F \"[][]\" '/Left:/ {if ($6 == \"on\") print $2; else print \"mute\"}'" },
+	{ run_command, "  %s |",        "amixer get Capture | awk -F \"[][]\" '/Left:/ {print $6}'" },
 	{ datetime, " %s ",          "%F %T" },
 };
