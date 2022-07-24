@@ -1,10 +1,10 @@
 #!/usr/bin/env bash
 
 # Monitor settings
-xrandr --output Virtual-1 --mode 1440x900
+xrandr --output eDP-1 --mode 2160x1440
 
 # Wallpaper
-feh --bg-scale  ~/Pictures/wallpaper 
+feh --bg-scale  ~/Pictures/wallpaper.jpg
 
 # Run slstatus
 exec slstatus &

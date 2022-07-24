@@ -64,14 +64,14 @@ static const char unknown_str[] = "n/a";
  * wifi_essid          WiFi ESSID                      interface name (wlan0)
  */
 static const struct arg args[] = {
-	/* function format          argument */
-	{ run_command, "  %s |",     "uname -r | awk -F \"-\" '{print $1}'"},
-	{ cpu_perc, " ﬙ %s%% |",      NULL    },
-	{ ram_perc, "  %s%% ",      NULL    },
-	{ ram_used, "%s |",          NULL    },
-	{ disk_free, "  %s |",       "/"     },
-	{ ipv4,     "  %s |",        "ens33" },
-	{ run_command, "  %s |",        "amixer get Master | awk -F \"[][]\" '/Left:/ {if ($6 == \"on\") print $2; else print \"mute\"}'" },
-	{ run_command, "  %s |",        "amixer get Capture | awk -F \"[][]\" '/Left:/ {print $6}'" },
-	{ datetime, " %s ",          "%F %T" },
+	/* function	format		argument */
+	{ run_command,	"  %s |",	"~/.dwm/kernel.sh"},
+	{ cpu_perc,	" ﬙ %s%% |",	NULL    },
+	{ ram_perc,	"  %s%% ",	NULL    },
+	{ ram_used,	"%s |",		NULL    },
+	{ disk_free,	"  %s |",	"/"     },
+	{ ipv4,		"  %s |",	"wlan0" },
+	{ run_command,	"  %s |",	"~/.dwm/volume.sh" },
+	{ run_command,	"  %s |",	"~/.dwm/micvol.sh" },
+	{ datetime,	" %s ",		"%F %T" },
 };
