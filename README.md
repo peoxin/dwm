@@ -182,9 +182,9 @@ amixer set Master on/off/mute/unmute/toggle # 切换静音
 设置音量控制快捷键：
 
 ```c
-static const char *voltogglecmd[] = { "~/.dwm/voltoggle.sh", NULL };
-static const char *voldowncmd[] = { "~/.dwm/voldown.sh", NULL };
-static const char *volupcmd[] = { "~/.dwm/volup.sh", NULL };
+static const char *voltogglecmd[] = { "/home/peoxin/.dwm/voltoggle.sh", NULL };
+static const char *voldowncmd[] = { "/home/peoxin/.dwm/voldown.sh", NULL };
+static const char *volupcmd[] = { "/home/peoxin/.dwm/volup.sh", NULL };
 
 { MODKEY, XK_F1, spawn, {.v = voltogglecmd } },
 { MODKEY, XK_F2, spawn, {.v = voldowncmd } },
