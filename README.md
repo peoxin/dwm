@@ -70,11 +70,11 @@ sudo pacman -S feh # 安装壁纸工具
 
 #### 应用补丁
 
-| 补丁      | 下载链接                                                     |
-| --------- | ------------------------------------------------------------ |
-| autostart | https://dwm.suckless.org/patches/autostart/dwm-autostart-20210120-cb3f58a.diff |
-| fullgaps | http://dwm.suckless.org/patches/fullgaps/dwm-fullgaps-toggle-20200830.diff |
-| noborder | http://dwm.suckless.org/patches/noborder/dwm-noborderselflickerfix-2022042627-d93ff48803f0.diff | 
+| 补丁        | 下载链接                                                                                            |
+| --------- | ----------------------------------------------------------------------------------------------- |
+| autostart | https://dwm.suckless.org/patches/autostart/dwm-autostart-20210120-cb3f58a.diff                  |
+| fullgaps  | http://dwm.suckless.org/patches/fullgaps/dwm-fullgaps-toggle-20200830.diff                      |
+| noborder  | http://dwm.suckless.org/patches/noborder/dwm-noborderselflickerfix-2022042627-d93ff48803f0.diff |
 
 ### 正式配置
 
@@ -94,9 +94,9 @@ static const char *termcmd[] = { "alacritty", NULL };
 
 ```c
 static const char *fonts[] = {
-	"monospace:size=10",
-	"WenQuanYi Micro Hei:size=10:type=Regular:antialias=true:autohint=true",
-	"Symbols Nerd Font:pixelsize=14:type=2048-em:antialias=true:autohint=true"
+    "monospace:size=10",
+    "WenQuanYi Micro Hei:size=10:type=Regular:antialias=true:autohint=true",
+    "Symbols Nerd Font:pixelsize=14:type=2048-em:antialias=true:autohint=true"
 };
 ```
 
@@ -123,6 +123,7 @@ uname -r | awk -F "-" '{print $1}'
 ```
 
 显示音量：
+
 ```shell
 amixer get Master | awk -F "[][]" '/Left:/ {print $2}'
 amixer get Capture | awk -F "[][]" '/Left:/ {print $2}'
@@ -141,6 +142,8 @@ xrandr --output <monitor> --mode <width>x<height>
 ```
 
 执行`xrandr`可以查看可选的显示器和分辨率。
+
+> HiDPI设置：在`~/.Xresources`文件中，添加`Xft.dpi: <dpi>`，其中`<dpi>`建议选取`96`、`144`、`192`等值。参考[HiDPI - ArchWiki](https://wiki.archlinux.org/title/HiDPI#X_Resources)。
 
 ##### 设置壁纸
 
