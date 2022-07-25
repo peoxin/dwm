@@ -70,6 +70,7 @@ static const char *voltogglecmd[] = { "/home/peoxin/.dwm/voltoggle.sh", NULL };
 static const char *voldowncmd[] = { "/home/peoxin/.dwm/voldown.sh", NULL };
 static const char *volupcmd[] = { "/home/peoxin/.dwm/volup.sh", NULL };
 static const char *mictogglecmd[] = { "/home/peoxin/.dwm/mictoggle.sh", NULL };
+static const char *trayercmd[] = { "/home/peoxin/.dwm/trayer.sh", NULL };
 
 static Key keys[] = {
 	/* modifier                     key        function        argument */
@@ -79,6 +80,7 @@ static Key keys[] = {
 	{ MODKEY,                       XK_F2,     spawn,          {.v = voldowncmd } },
 	{ MODKEY,                       XK_F3,     spawn,          {.v = volupcmd } },
 	{ MODKEY,                       XK_F4,     spawn,          {.v = mictogglecmd } },
+	{ MODKEY,                       XK_o,      spawn,          {.v = trayercmd } },
 	{ MODKEY,                       XK_b,      togglebar,      {0} },
 	{ MODKEY,                       XK_j,      focusstack,     {.i = +1 } },
 	{ MODKEY,                       XK_k,      focusstack,     {.i = -1 } },
