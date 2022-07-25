@@ -66,11 +66,16 @@ static const char unknown_str[] = "n/a";
 static const struct arg args[] = {
 	/* function		format		argument */
 	// { run_command,	"  %s |",	"~/.dwm/kernel.sh" },
-	{ cpu_perc,		" ﬙ %s%% |",	NULL    },
+	// { cpu_perc,		" ﬙ %s%% |",	NULL    },
 	// { ram_perc,		"  %s%% ",	NULL    },
-	{ ram_used,		"  %s |",	NULL    },
+	// { ram_used,		"  %s |",	NULL    },
+	{ cpu_perc,		    "  %s%%",	NULL    },
+	{ ram_used,		    " %s |",	NULL    },
 	// { disk_free,		"  %s |",	"/"     },
 	// { ipv4,		"  %s |",	"wlan0" },
+    // { wifi_perc,        " %s |",    "wlan0" },
+    { netspeed_rx,      "  %s",    "wlan0" },
+    { netspeed_tx,      " 祝 %s |", "wlan0" },
 	{ run_command,		"  %s |",	"~/.dwm/volume.sh" },
 	{ run_command,		"  %s |",	"~/.dwm/micvol.sh" },
 	{ battery_perc,		"  %s",	"BAT0" },
