@@ -9,7 +9,7 @@ static const int topbar             = 1;        /* 0 means bottom bar */
 static const char *fonts[] = {
 	"monospace:size=10",
 	"WenQuanYi Micro Hei:size=10:type=Regular:antialias=true:autohint=true",
-	"Symbols Nerd Font:pixelsize=14:type=2048-em:antialias=true:autohint=true"
+	"Symbols Nerd Font:pixelsize=20:type=2048-em:antialias=true:autohint=true"
 };
 static const char dmenufont[]       = "monospace:size=10";
 static const char col_gray1[]       = "#222222";
@@ -31,9 +31,10 @@ static const Rule rules[] = {
 	 *	WM_CLASS(STRING) = instance, class
 	 *	WM_NAME(STRING) = title
 	 */
-	/* class      instance    title       tags mask     isfloating   monitor */
-	{ "Gimp",     NULL,       NULL,       0,            1,           -1 },
-	{ "Firefox",  NULL,       NULL,       1 << 8,       0,           -1 },
+	/* class		instance    title       tags mask     isfloating   monitor */
+	{ "Gimp",     		NULL,       NULL,       0,            1,           -1 },
+	{ "Firefox",  		NULL,       NULL,       1 << 8,       0,           -1 },
+	{ "Clash for Windows",  NULL,       NULL,       1 << 8,       0,           -1 },
 };
 
 /* layout(s) */
