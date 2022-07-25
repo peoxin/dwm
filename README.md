@@ -66,6 +66,8 @@ sudo pacman -S alacritty # 安装终端模拟器
 sudo pacman -S wqy-microhei ttf-nerd-fonts-symbols # 安装字体
 sudo pacman -S alsa-utils # 安装音量管理工具
 sudo pacman -S feh # 安装壁纸工具
+sudo pacman -S trayer # 安装系统托盘工具
+sudo pacman -S picom # 安装picom
 ```
 
 #### 应用补丁
